@@ -1,0 +1,39 @@
+﻿@page "{showId}" @* gefangene Id von Events Page *@
+@model SPG_Fachtheorie.Aufgabe3.RazorPages.Pages.ContingentsModel //Route hier sichtbar
+@section head
+{
+}
+<h1>Kontingente</h1>
+
+<div class="border border-1 border-secondary">
+    <span>Event: @Model.Show.Event.Name</span>
+    <br />
+    <span>Showdate: @Model.Show.Date.ToString("dd.MM.yyyy, HH:mm")</span>
+</div>
+
+@foreach (var contingent in Model.Show.Contingents)
+{
+    <h4>Kontingent @contingent.ContingentType.ToString() (@contingent.AvailableTickets Tickets)</h4>
+    <a asp-page="/BuyTicket" asp-route-contingentid="@contingent.Id">Ticket kaufen</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Guest</th>
+                <th>Reservation Date</th>
+                <th>State</th>
+                <th>Pax</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ticket in contingent.Tickets.OrderBy(t => t.Guest.Lastname).ThenBy(t => t.Guest.Firstname))
+            {
+                <tr>
+                    <td>@ticket.Guest.Lastname @ticket.Guest.Firstname @ticket.Guest.BirthDate.ToString("dd.MM.yyyy")</td>
+                    <td>@ticket.ReservationDateTime.ToString("dd.MM.yyyy, HH:mm")</td>
+                    <td>@(ticket.TicketState == Aufgabe2.Model.TicketState.Sold ? "Verkauft" : "Reserviert")</td>
+                    <td>@ticket.Pax</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

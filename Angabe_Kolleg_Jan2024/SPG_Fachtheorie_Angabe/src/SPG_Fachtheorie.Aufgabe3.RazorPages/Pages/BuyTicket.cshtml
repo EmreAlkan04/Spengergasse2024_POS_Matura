@@ -1,0 +1,25 @@
+﻿@page "{contingentId}"
+@model SPG_Fachtheorie.Aufgabe3.RazorPages.Pages.BuyTicketModel
+@section head {
+
+}
+<h1>Ticket kaufen</h1>
+
+<div class="border border-1 border-secondary">
+    <span>Event: @Model.Contingent.Show.Event.Name</span>
+    <br />
+    <span>Show: @Model.Contingent.Show.Date.ToString("dd.MM.yyyy, HH:mm")</span>
+    <br />
+    <span>Typ: @Model.Contingent.ContingentType.ToString()</span>
+</div>
+<br />
+<form method="post">
+    <label class="form-label">Gast:</label>
+    <select asp-for="NewTicket.GuestId" asp-items="@Model.Guests" class="form-select"></select>
+    <br />
+    <label class="form-label" for="guest">Pax:</label>
+    <input asp-for="NewTicket.Pax" class="form-control" type="text" />
+    <br />
+    <div style="color:red" asp-validation-summary="All"></div>
+    <button type"submit" class="btn btn-primary">Kaufen</button>
+</form>

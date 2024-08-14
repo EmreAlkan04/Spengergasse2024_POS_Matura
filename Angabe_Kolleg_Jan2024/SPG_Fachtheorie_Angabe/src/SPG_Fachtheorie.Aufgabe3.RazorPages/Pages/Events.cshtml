@@ -1,0 +1,40 @@
+﻿@page
+@model SPG_Fachtheorie.Aufgabe3.RazorPages.Pages.EventsModel
+@section head {
+}
+
+<style>
+    tbody tr:hover {
+        background-color: lightgreen;
+    }
+</style>
+
+<h1>Übersicht über die Events</h1>
+
+@foreach (var ev in Model.Events.Where(e => e.Shows.Any(s => s.Date > new DateTime(2024, 1, 16)))) //Zuerst where, um nach Shows mit Any zu greifen, dann das Datum filtern
+{
+    
+        <h2>@ev.Name</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Contingents</th>
+                </tr>
+            </thead>
+        <tbody>
+            @foreach (var show in ev.Shows.OrderBy(s => s.Date)) //Sortiert nach Datum
+            {
+
+                <tr>
+                <td>@show.Date.ToString("dd.MM.yyyy")</td>
+                @* Die buttons mit Route *@
+                <td><a class="buttonlink" asp-page="/Contingents" asp-route-showid="@show.Id">Contingents</a></td>
+                <td><a class="buttonlink" asp-page="/AddShow" asp-route-showId="@ev.Id">Add Show</a></td>
+                </tr>
+
+            }
+        </tbody>
+        </table>
+    
+}
