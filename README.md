@@ -12,13 +12,6 @@
 
 
 
-
-
-
-
-
-
-
 ## [2. September 2023:](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Sept2023/Angabe.pdf)
 
 * [Infrastructure](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe1/Infrastructure/AppointmentContext.cs) ähnlich wie Jan2024 mit [Test](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/test/SPG_Fachtheorie.Aufgabe1.Test/Aufgabe1Test.cs);
