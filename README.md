@@ -1,6 +1,5 @@
 # Spengergasse2024_POS_Matura
-## 1. Jänner 2024:
-**[Angabe](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Jan2024/Angabe.pdf)**
+## [1. Jänner 2024:](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Jan2024/Angabe.pdf)
 * [Infrastructure](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Jan2024/SPG_Fachtheorie_Angabe/src/SPG_Fachtheorie.Aufgabe1/Infrastructure/AppointmentContext.cs) von *Discriminator*, *Value Object* mit [Test](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Jan2024/SPG_Fachtheorie_Angabe/src/SPG_Fachtheorie.Aufgabe2/Services/EventService.cs) über *Discriminator*;
   
 <img width="291" alt="image" src="https://github.com/user-attachments/assets/9416d4bf-b584-4a55-aef3-82067a2460fd">
@@ -13,7 +12,7 @@
 
 
 
-### 2. September 2023:
+## 2. September 2023:
 **[Angabe](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Sept2023/Angabe.pdf)**
 * [Infrastructure](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe1/Infrastructure/AppointmentContext.cs) ähnlich wie Jan2024 mit [Test](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/test/SPG_Fachtheorie.Aufgabe1.Test/Aufgabe1Test.cs);
 
