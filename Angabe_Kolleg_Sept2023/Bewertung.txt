@@ -1,0 +1,3 @@
+Aufgabe 1 sieht richtig aus (DB nicht da, LINQ auf eigene weiße geschrieben, Context?)
+Aufgabe 2 war leicht
+Aufgabe 3 Add geht mit fehlern

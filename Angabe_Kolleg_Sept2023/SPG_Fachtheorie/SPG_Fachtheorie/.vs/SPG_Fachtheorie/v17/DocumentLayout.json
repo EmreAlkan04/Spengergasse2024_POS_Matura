@@ -1,0 +1,144 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\SPG_Fachtheorie.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2023\\spg_fachtheorie\\spg_fachtheorie\\src\\spg_fachtheorie.aufgabe3.razorpages\\pages\\stickers\\add.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\SPG_Fachtheorie.Aufgabe3.RazorPages.csproj|solutionrelative:src\\spg_fachtheorie.aufgabe3.razorpages\\pages\\stickers\\add.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\SPG_Fachtheorie.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2023\\spg_fachtheorie\\spg_fachtheorie\\src\\spg_fachtheorie.aufgabe3.razorpages\\pages\\customers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\SPG_Fachtheorie.Aufgabe3.RazorPages.csproj|solutionrelative:src\\spg_fachtheorie.aufgabe3.razorpages\\pages\\customers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\SPG_Fachtheorie.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2023\\spg_fachtheorie\\spg_fachtheorie\\src\\spg_fachtheorie.aufgabe3.razorpages\\pages\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\SPG_Fachtheorie.Aufgabe3.RazorPages.csproj|solutionrelative:src\\spg_fachtheorie.aufgabe3.razorpages\\pages\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\SPG_Fachtheorie.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2023\\spg_fachtheorie\\spg_fachtheorie\\src\\spg_fachtheorie.aufgabe3.razorpages\\pages\\stickers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\SPG_Fachtheorie.Aufgabe3.RazorPages.csproj|solutionrelative:src\\spg_fachtheorie.aufgabe3.razorpages\\pages\\stickers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\SPG_Fachtheorie.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2023\\spg_fachtheorie\\spg_fachtheorie\\src\\spg_fachtheorie.aufgabe3.razorpages\\pages\\stickers\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\SPG_Fachtheorie.Aufgabe3.RazorPages.csproj|solutionrelative:src\\spg_fachtheorie.aufgabe3.razorpages\\pages\\stickers\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\SPG_Fachtheorie.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2023\\spg_fachtheorie\\spg_fachtheorie\\src\\spg_fachtheorie.aufgabe3.razorpages\\pages\\stickers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\SPG_Fachtheorie.Aufgabe3.RazorPages.csproj|solutionrelative:src\\spg_fachtheorie.aufgabe3.razorpages\\pages\\stickers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 283,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Add.cshtml.cs",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Add.cshtml.cs",
+              "RelativeDocumentMoniker": "src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Add.cshtml.cs",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Add.cshtml.cs",
+              "RelativeToolTip": "src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Add.cshtml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAHYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T19:56:00.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Add.cshtml",
+              "RelativeDocumentMoniker": "src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Add.cshtml",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Add.cshtml",
+              "RelativeToolTip": "src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Add.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-15T19:55:50.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Index.cshtml.cs",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Index.cshtml.cs",
+              "RelativeToolTip": "src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Index.cshtml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T19:54:31.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Index.cshtml",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Index.cshtml",
+              "RelativeToolTip": "src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Stickers\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-15T19:54:15.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Customers\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Customers\\Index.cshtml.cs",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Customers\\Index.cshtml.cs",
+              "RelativeToolTip": "src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Customers\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAACDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T19:53:05.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Customers\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Customers\\Index.cshtml",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Customers\\Index.cshtml",
+              "RelativeToolTip": "src\\SPG_Fachtheorie.Aufgabe3.RazorPages\\Pages\\Customers\\Index.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-15T19:52:57.626Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 221,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+﻿@page "{CustomerGuid}"
+@model SPG_Fachtheorie.Aufgabe3.RazorPages.Pages.Stickers.IndexModel
+@section head {
+    <style>
+
+    </style>
+}
+<h1>Übersicht der gekauften Vignetten</h1>
+
+<div>
+    <th>Firstname: @Model.Customer.Firstname</th>
+    <th>Lastname: @Model.Customer.Lastname</th>
+    <th>Email: @Model.Customer.Email</th>
+</div>
+
+<table>
+    <thead>
+        <tr>
+             <th>Numberplate</th>
+             <th>StickerType.Name</th>
+             <th>PurchaseDate</th>
+            <th>ValidFrom</th>
+            <th>ValidUntil</th>
+            <th>Preis</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var t in Model.Customer.Stickers)
+        {
+            <tr>
+            <td>@t.Numberplate</td>
+            <td>@t.StickerType.Name</td>
+            <td>@t.PurchaseDate</td>
+            <td>@t.ValidFrom</td>
+            <td>@t.ValidFrom.AddDays(t.StickerType.DaysValid)</td>
+            <td>@t.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>

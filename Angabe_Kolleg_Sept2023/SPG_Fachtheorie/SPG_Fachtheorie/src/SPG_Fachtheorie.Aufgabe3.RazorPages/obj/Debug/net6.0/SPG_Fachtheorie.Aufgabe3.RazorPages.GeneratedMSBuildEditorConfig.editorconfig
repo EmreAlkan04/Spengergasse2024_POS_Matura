@@ -1,0 +1,47 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SPG_Fachtheorie.Aufgabe3.RazorPages
+build_property.RootNamespace = SPG_Fachtheorie.Aufgabe3.RazorPages
+build_property.ProjectDir = C:\HTL-Spengergasse\MostFinished\Angabe_Kolleg_Sept2023\SPG_Fachtheorie\SPG_Fachtheorie\src\SPG_Fachtheorie.Aufgabe3.RazorPages\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\HTL-Spengergasse\MostFinished\Angabe_Kolleg_Sept2023\SPG_Fachtheorie\SPG_Fachtheorie\src\SPG_Fachtheorie.Aufgabe3.RazorPages
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/HTL-Spengergasse/MostFinished/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages/Customers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HTL-Spengergasse/MostFinished/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HTL-Spengergasse/MostFinished/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages/Stickers/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RpY2tlcnNcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HTL-Spengergasse/MostFinished/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages/Stickers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RpY2tlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HTL-Spengergasse/MostFinished/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HTL-Spengergasse/MostFinished/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HTL-Spengergasse/MostFinished/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-8y72nm087x

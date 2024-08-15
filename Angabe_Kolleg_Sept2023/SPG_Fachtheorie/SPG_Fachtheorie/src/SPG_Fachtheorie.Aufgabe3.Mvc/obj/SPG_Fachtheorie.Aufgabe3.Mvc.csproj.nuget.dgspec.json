@@ -1,0 +1,146 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.Mvc\\SPG_Fachtheorie.Aufgabe3.Mvc.csproj": {}
+  },
+  "projects": {
+    "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe2\\SPG_Fachtheorie.Aufgabe2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe2\\SPG_Fachtheorie.Aufgabe2.csproj",
+        "projectName": "SPG_Fachtheorie.Aufgabe2",
+        "projectPath": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe2\\SPG_Fachtheorie.Aufgabe2.csproj",
+        "packagesPath": "C:\\Users\\emrea\\.nuget\\packages\\",
+        "outputPath": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emrea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[34.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.Mvc\\SPG_Fachtheorie.Aufgabe3.Mvc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.Mvc\\SPG_Fachtheorie.Aufgabe3.Mvc.csproj",
+        "projectName": "SPG_Fachtheorie.Aufgabe3.Mvc",
+        "projectPath": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.Mvc\\SPG_Fachtheorie.Aufgabe3.Mvc.csproj",
+        "packagesPath": "C:\\Users\\emrea\\.nuget\\packages\\",
+        "outputPath": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe3.Mvc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emrea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe2\\SPG_Fachtheorie.Aufgabe2.csproj": {
+                "projectPath": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2023\\SPG_Fachtheorie\\SPG_Fachtheorie\\src\\SPG_Fachtheorie.Aufgabe2\\SPG_Fachtheorie.Aufgabe2.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

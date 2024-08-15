@@ -1,0 +1,35 @@
+﻿@page
+@model SPG_Fachtheorie.Aufgabe3.RazorPages.Pages.Customers.IndexModel
+
+<h1>Liste der Kunden</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Stickers</th>
+            <th>Vehicles</th>
+            <th>Aktionen</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model.Customers)
+        {
+            <tr>
+                <td>@customer.Firstname</td>
+                <td>@customer.Lastname</td>
+                <td>@customer.Stickers.Count()</td>
+                <td>@customer.Vehicles.Count()</td>
+                <td>
+                    @* Aktionen Feld hat zwei Links *@
+                    @* Die Id wurde in der DTO geschrieben, um einen Link herstellen zu können
+                    @Page"{CustomerId}" in einem anderen cshtml Fängt diesen Id und gibt es an die Methode weiter
+                    *@
+                    <a asp-page="/Stickers/Add" asp-route-CustomerGuid="@customer.Guid">Vignette Kaufen</a> <!-- Link zur Add-Seite -->
+                    <a asp-page="/Stickers/Index" asp-route-CustomerGuid="@customer.Guid">Gekaufte Vignette Anzeigen</a> <!-- Link zur Stickers-Seite -->
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
