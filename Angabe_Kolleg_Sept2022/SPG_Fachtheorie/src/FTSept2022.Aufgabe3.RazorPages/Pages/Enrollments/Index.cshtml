@@ -1,0 +1,39 @@
+﻿@page
+@model Enrollments.IndexModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<h1>Liste der Lehrveranstaltungen</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Titel</th>
+            <th>Ects</th>
+            <th>Professor</th>
+            <th>Noten</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var a in Model.EnrollmentsList)
+        {
+            <tr>
+                <td>@a.Titel</td>
+                <td>@a.Ects</td>
+                <td>@a.ProfessorLastName, @a.ProfessorFirstName</td>
+                @if(a.Grade is not null)
+                {
+                    <td>
+                        <a asp-page="/Exams/Details" asp-route-id="@a.Id">@a.Grade (@a.Date)</a>
+                    </td>
+                }
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h4>
+                <a asp-page="/Exams/Create">Zur Prüfung anmelden</a>
+</h4>

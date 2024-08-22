@@ -1,0 +1,212 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2022\\spg_fachtheorie\\src\\ftsept2022.aufgabe3.razorpages\\pages\\exams\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|solutionrelative:src\\ftsept2022.aufgabe3.razorpages\\pages\\exams\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2022\\spg_fachtheorie\\src\\ftsept2022.aufgabe3.razorpages\\pages\\exams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|solutionrelative:src\\ftsept2022.aufgabe3.razorpages\\pages\\exams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2022\\spg_fachtheorie\\src\\ftsept2022.aufgabe3.razorpages\\pages\\exams\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|solutionrelative:src\\ftsept2022.aufgabe3.razorpages\\pages\\exams\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2022\\spg_fachtheorie\\src\\ftsept2022.aufgabe3.razorpages\\pages\\exams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|solutionrelative:src\\ftsept2022.aufgabe3.razorpages\\pages\\exams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2022\\spg_fachtheorie\\src\\ftsept2022.aufgabe3.razorpages\\pages\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|solutionrelative:src\\ftsept2022.aufgabe3.razorpages\\pages\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2022\\spg_fachtheorie\\src\\ftsept2022.aufgabe3.razorpages\\pages\\enrollments\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|solutionrelative:src\\ftsept2022.aufgabe3.razorpages\\pages\\enrollments\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2022\\spg_fachtheorie\\src\\ftsept2022.aufgabe3.razorpages\\pages\\enrollments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|solutionrelative:src\\ftsept2022.aufgabe3.razorpages\\pages\\enrollments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2022\\spg_fachtheorie\\src\\ftsept2022.aufgabe3.razorpages\\pages\\courses\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AA19303-3CA8-43E6-9FAC-8A58D9D4FDD8}|src\\FTSept2022.Aufgabe3.RazorPages\\FTSept2022.Aufgabe3.RazorPages.csproj|solutionrelative:src\\ftsept2022.aufgabe3.razorpages\\pages\\courses\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE43F326-C4E9-43C9-A4BA-E9FF2B2262BA}|src\\FTSept2022.Aufgabe2.Test\\FTSept2022.Aufgabe2.Test.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2022\\spg_fachtheorie\\src\\ftsept2022.aufgabe2.test\\courseservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE43F326-C4E9-43C9-A4BA-E9FF2B2262BA}|src\\FTSept2022.Aufgabe2.Test\\FTSept2022.Aufgabe2.Test.csproj|solutionrelative:src\\ftsept2022.aufgabe2.test\\courseservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E087A0AF-D2C6-4182-9D74-D5F4D294F7DF}|src\\FTSept2022.Aufgabe2\\FTSept2022.Aufgabe2.csproj|c:\\htl-spengergasse\\mostfinished\\angabe_kolleg_sept2022\\spg_fachtheorie\\src\\ftsept2022.aufgabe2\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E087A0AF-D2C6-4182-9D74-D5F4D294F7DF}|src\\FTSept2022.Aufgabe2\\FTSept2022.Aufgabe2.csproj|solutionrelative:src\\ftsept2022.aufgabe2\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Create.cshtml.cs",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Create.cshtml.cs",
+              "RelativeToolTip": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Create.cshtml.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAuwFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T13:52:09.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Create.cshtml",
+              "RelativeDocumentMoniker": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Create.cshtml",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Create.cshtml",
+              "RelativeToolTip": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T13:52:04.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Details.cshtml.cs",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Details.cshtml.cs",
+              "RelativeToolTip": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Details.cshtml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T13:51:56.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Details.cshtml",
+              "RelativeDocumentMoniker": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Details.cshtml",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Details.cshtml",
+              "RelativeToolTip": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Exams\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T13:51:47.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Enrollments\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Enrollments\\Index.cshtml.cs",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Enrollments\\Index.cshtml.cs",
+              "RelativeToolTip": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Enrollments\\Index.cshtml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T13:51:32.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Enrollments\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Enrollments\\Index.cshtml",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Enrollments\\Index.cshtml",
+              "RelativeToolTip": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Enrollments\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T13:51:24.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Courses\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Courses\\Index.cshtml.cs",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Courses\\Index.cshtml.cs",
+              "RelativeToolTip": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Courses\\Index.cshtml.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T13:51:20.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Courses\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Courses\\Index.cshtml",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Courses\\Index.cshtml",
+              "RelativeToolTip": "src\\FTSept2022.Aufgabe3.RazorPages\\Pages\\Courses\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T13:51:16.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CourseServiceTests.cs",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe2.Test\\CourseServiceTests.cs",
+              "RelativeDocumentMoniker": "src\\FTSept2022.Aufgabe2.Test\\CourseServiceTests.cs",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe2.Test\\CourseServiceTests.cs",
+              "RelativeToolTip": "src\\FTSept2022.Aufgabe2.Test\\CourseServiceTests.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T13:50:25.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CourseService.cs",
+              "DocumentMoniker": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe2\\Services\\CourseService.cs",
+              "RelativeDocumentMoniker": "src\\FTSept2022.Aufgabe2\\Services\\CourseService.cs",
+              "ToolTip": "C:\\HTL-Spengergasse\\MostFinished\\Angabe_Kolleg_Sept2022\\SPG_Fachtheorie\\src\\FTSept2022.Aufgabe2\\Services\\CourseService.cs",
+              "RelativeToolTip": "src\\FTSept2022.Aufgabe2\\Services\\CourseService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T13:49:36.812Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 171,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

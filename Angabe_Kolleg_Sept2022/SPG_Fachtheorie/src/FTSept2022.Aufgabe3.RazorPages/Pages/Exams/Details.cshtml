@@ -1,0 +1,29 @@
+﻿@page "{Id}"
+@model Exams.DetailsModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>Zeugnis für die Lehrveranstaltung @Model.Exams.EnrollmentNavigation.CourseNavigation.Title</h1>
+
+<table class="table">
+    <tr>
+        <th>Name der LV</th>
+        <td>@Model.Exams.EnrollmentNavigation.CourseNavigation.Title</td>
+    </tr>
+    <tr>
+        <th>Professor</th>
+        <td>@Model.Exams.EnrollmentNavigation.CourseNavigation.ProfessorNavigation.LastName, @Model.Exams.EnrollmentNavigation.CourseNavigation.ProfessorNavigation.FirstName</td>
+    </tr>
+    <tr>
+        <th>Datum der Prüfung</th>
+        <td>@Model.Exams.Date</td>
+    </tr>
+    <tr>
+        <th>ECTS Punkte</th>
+        <td>@Model.Exams.EnrollmentNavigation.CourseNavigation.Ects</td>
+    </tr>
+    <tr>
+        <th>Note</th>
+        <td>@Model.Exams.Grade</td>
+    </tr>
+</table>

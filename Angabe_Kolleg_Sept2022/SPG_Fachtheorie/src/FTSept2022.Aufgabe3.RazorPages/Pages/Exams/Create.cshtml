@@ -1,0 +1,21 @@
+﻿@page 
+@model Exams.CreateModel
+@{
+}
+
+<h1>Anmeldung zur Prüfung für @Model.Enrollments.StudentRegistrationNumber</h1>
+@* @Model.Enrollments.StudentNavigation.LastName *@
+
+<form method="post">
+    <label class="form-label">LV:</label>
+    <select asp-for="Command.CourseId" asp-items="@Model.Titels" class="form-select"></select>
+    <br />
+    <label class="form-label" for="guest">Datum:</label>
+    <input asp-for="Command.Pruefungsdatum" class="form-control" type="date" />
+    <br />
+    <label class="form-label" for="guest">Telefonnummer:</label>
+    <input asp-for="Command.Telefonnummer" class="form-control" type="text" />
+    <br />
+    <div style="color:red" asp-validation-summary="All"></div>
+    <button type"submit" class="btn btn-primary">Kaufen</button>
+</form>
