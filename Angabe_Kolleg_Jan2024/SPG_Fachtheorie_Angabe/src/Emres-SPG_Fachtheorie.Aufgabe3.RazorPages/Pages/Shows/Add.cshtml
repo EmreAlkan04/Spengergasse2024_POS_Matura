@@ -1,0 +1,15 @@
+﻿@page
+@model SPG_Fachtheorie.Aufgabe3.RazorPages.Pages.Shows.AddModel
+@section head {
+}
+<h1>Add Show</h1>
+
+<form method="post">
+    <label>Event:</label>
+    <select asp-for="NewShow.EventId" asp-items="@Model.Events"></select>
+    <br />
+    <label>Date:</label>
+    <input type="date" asp-for="NewShow.Date" />
+    <br />
+    <button type="submit">Speichern</button>
+</form>

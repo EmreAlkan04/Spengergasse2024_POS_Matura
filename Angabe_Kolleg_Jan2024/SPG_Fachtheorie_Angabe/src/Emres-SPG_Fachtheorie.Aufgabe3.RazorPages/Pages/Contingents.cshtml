@@ -1,0 +1,37 @@
+﻿@page "{showId}"
+@model SPG_Fachtheorie.Aufgabe3.RazorPages.Pages.ContingentsModel
+@section head
+{
+}
+<h1>Kontingente</h1>
+<header>
+    <td>Event: @Model.Show.Event.Name</td>
+    <td>Date: @Model.Show.Date.ToString("dd.MM.yyyy, HH:mm")</td>
+</header>
+
+@foreach (var a in Model.Show.Contingents)
+{
+    <h4>@a.ContingentType (@a.AvailableTickets Tickets)</h4>
+    <td><a asp-page="/BuyTicket" asp-route-contingentId="@a.Id">Ticket Kaufen</a></td>
+    <table>
+        <thead>
+            <tr>
+                <th>Guest</th>
+                <th>Reservations</th>
+                <th>State</th>
+                <th>Pax</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var b in a.Tickets.OrderBy(s => s.Guest.Lastname).ThenBy(s => s.Guest.Firstname))
+            {
+                <tr>
+                    <td>@b.Guest.Firstname @b.Guest.Lastname @b.Guest.BirthDate.ToString("dd.MM.yyyy")</td>
+                    <td>@b.ReservationDateTime.ToString("dd.MM.yyyy, HH:mm")</td>
+                    <td>@b.TicketState</td>
+                    <td>@b.Pax</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
