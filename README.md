@@ -10,6 +10,8 @@
 
 * [Razor](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/tree/main/Angabe_Kolleg_Jan2024/SPG_Fachtheorie_Angabe/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages) mit Anzeigen, weiterleiten und hinzufügen _von Noah_;
 
+* [Mein Razor](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/tree/main/Angabe_Kolleg_Jan2024/SPG_Fachtheorie_Angabe/src/Emres-SPG_Fachtheorie.Aufgabe3.RazorPages/Pages) mit _/Shows/Add_. Alles funktioniert; 
+
 
 
 ## [September 2023:](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Sept2023/Angabe.pdf)
