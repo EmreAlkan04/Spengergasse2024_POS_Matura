@@ -39,3 +39,15 @@
 <img width="446" alt="image" src="https://github.com/user-attachments/assets/a600a179-3981-4e69-a697-ba5a9f9273da">
 
 * [Razor](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/tree/main/Angabe_Kolleg_Sept2022/SPG_Fachtheorie/src/FTSept2022.Aufgabe3.RazorPages/Pages) alles richtig;
+
+## [Jänner 2023](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Jan2023/FT_AIF_KIF_BIF_CIF_20230116_v2.pdf) 
+
+* [Infrastructure](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Jan2023/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe1/Infrastructure/UserContext.cs) Basics;
+
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/c0693406-1c4f-4602-a17a-16c2d752aa70">
+
+* [Service](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Jan2023/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe2/Services/PodcastService.cs) unfangreiche Methode mit [Test](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Jan2023/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe2.Test/DatabaseContextTest.cs);
+
+<img width="360" alt="image" src="https://github.com/user-attachments/assets/beb04d59-c240-48e6-b974-628045047f96">
+
+* [Razor](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/tree/main/Angabe_Kolleg_Jan2023/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages) Details und Add Pages;
