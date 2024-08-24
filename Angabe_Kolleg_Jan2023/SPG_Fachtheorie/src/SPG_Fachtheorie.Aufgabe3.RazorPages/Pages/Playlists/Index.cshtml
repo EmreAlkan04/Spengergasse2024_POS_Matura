@@ -1,0 +1,30 @@
+﻿@page
+@model Playlists.IndexModel
+@{
+}
+
+<style>
+    .test{
+        background-color: red;
+    }
+</style>
+
+<table class="test">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>UserName</th>
+            <th>Anzahl der Items</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var e in Model.playListDTOs.OrderBy(s => s.Name))
+        {
+            <tr>
+                <th>@e.Name</th>
+                <th>@e.UserName</th>
+                <th>@e.Items</th>
+            </tr>
+        }
+    </tbody>
+</table>

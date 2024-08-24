@@ -1,0 +1,3 @@
+AUfgabe 1 war leicht (db geht wieder nicht)
+aufgabe 2 alles funkltioniert 
+aufgabee 3 geht einwandfrei

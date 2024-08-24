@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <config>
+    <add key="repositoryPath" value="C:/Scratch/packages" />
+    <add key="globalPackagesFolder" value="C:/Scratch/packages" />
+  </config>
+  <settings>
+    <repositoryPath>C:/Scratch/packages</repositoryPath>
+  </settings>
+</configuration>

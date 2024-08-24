@@ -1,0 +1,68 @@
+﻿@using SPG_Fachtheorie.Aufgabe2.Domain
+@model SPG_Fachtheorie.Aufgabe3.Models.IndexViewModel
+<div>
+    <h1 class="h3">Klausurprüfung aus Fachtheorie</h1>
+    <p>Bitte füllen Sie diese Daten in der Datei <em>SPG_Fachtheorie.Aufgabe3/Views/Home/Index.cshtml</em> am Beginn Ihrer Arbeit aus.</p>
+    <table class="table table-sm mb-5 border border-primary">
+        <tr>
+            <th style="width:10em">Maturaaccount</th>
+            <td style="width:30em">(Bitte ausfüllen)</td>
+        </tr>
+        <tr>
+            <th>Vorname</th>
+            <td>(Bitte ausfüllen)</td>
+        </tr>
+        <tr>
+            <th>Zuname</th>
+            <td>(Bitte ausfüllen)</td>
+        </tr>
+        <tr>
+            <th>Klasse</th>
+            <td>(Bitte ausfüllen)</td>
+        </tr>
+    </table>
+</div>
+<div class="mb-3">
+    @if (Model.CurrentUser > 0)
+    {
+        <h5>Angemeldet als Admin mit der Id @Model.CurrentUser</h5>
+        <form method="post" asp-action="Logout">
+            <button class="btn btn-primary">Logout</button>
+        </form>
+    }
+    else
+    {
+        <h5>
+            Wähle einen Admin als User aus:
+        </h5>
+        <form method="post">
+            <select asp-for="SelectedUser"
+                class="form-control"
+                asp-items="Model.UserItems"></select>
+            <button class="btn btn-primary">Login</button>
+        </form>
+    }
+</div>
+<div>
+    <h1 class="h5">Daten der Tabelle Admin</h1>
+    <p>Diese Tabelle dient zum Testen des Datenbankzugriffes.</p>
+</div>
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>LastName</th>
+            <th>FirstName</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var a in Model.Admins)
+        {
+            <tr>
+                <td>@a.Id</td>
+                <td>@a.LastName</td>
+                <td>@a.FirstName</td>
+            </tr>
+        }
+    </tbody>
+</table>

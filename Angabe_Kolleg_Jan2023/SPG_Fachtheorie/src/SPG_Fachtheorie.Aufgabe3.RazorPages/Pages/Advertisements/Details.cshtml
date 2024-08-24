@@ -1,0 +1,41 @@
+﻿@page "{Id}"
+@model Advertisements.DetailsModel
+@{
+}
+
+<h1>Details von Werbung für @Model.DAdvertisement.Customer.ResponsibleAdminId</h1>
+
+<table class="ad">
+    <tr>
+        <th>Id</th>
+        <td>@Model.DAdvertisement.Id</td>
+    </tr>
+    <tr>
+        <th>ProductName</th>
+        <td>@Model.DAdvertisement.ProductName</td>
+    </tr>
+    <tr>
+        <th>Customer</th>
+        <td>@Model.DAdvertisement.Customer.LastName, @Model.DAdvertisement.Customer.FirstName</td>
+    </tr>
+    <tr>
+        <th>Production</th>
+        <td>@Model.DAdvertisement.Production</td>
+    </tr>
+    <tr>
+        <th>Length</th>
+        <td>@Model.DAdvertisement.Length</td>
+    </tr>
+    <tr>
+        <th>MinPlayTime</th>
+        <td>@Model.DAdvertisement.MinPlayTime</td>
+    </tr>
+    <tr>
+        <th>CostsPerPlay</th>
+        <td>@Model.DAdvertisement.CostsPerPlay</td>
+    </tr>
+    <tr>
+        <th>ListenedItems</th>
+        <td>@Model.DAdvertisement.ListenedItems.Count()</td>
+    </tr>
+</table>

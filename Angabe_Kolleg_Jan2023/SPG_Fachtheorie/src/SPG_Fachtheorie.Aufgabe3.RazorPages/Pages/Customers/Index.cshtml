@@ -1,0 +1,33 @@
+﻿@page
+@model Customers.IndexModel
+@{
+}
+
+<table class="cus">
+    <thead>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>CompanyName</th>
+            <th>Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var a in Model.CustomersList)
+        {
+            <tr>
+                <td>@a.FirstName</td>
+                <td>@a.LastName</td>
+                <td>@a.CompanyName</td>
+                @foreach(var b in a.ADDTOs)
+                {
+                    if (b.Length >= 5000)
+                    {    
+                        <td><a class="cus" asp-page="/Advertisements/Details" asp-route-Id="@b.Id">@b.Id @b.ProductName</a></td>
+                    }
+                }
+            </tr>
+        }
+                <td><a class="cus" asp-page="/Advertisements/Create">Add Advertisement</a></td>
+    </tbody>
+</table>

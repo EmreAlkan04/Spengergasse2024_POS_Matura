@@ -1,0 +1,29 @@
+﻿@page
+@model Advertisements.CreateModel
+@{
+}
+
+<h1> Create Add by Admin <h1>
+
+        <form method="post">
+            <label>Customer</label>
+            <select asp-for="NewAdvertisement.CustomerId" asp-items="@Model.CustomerList"></select>
+            </<br />
+            <label>ProductName</label>
+            <input asp-for="NewAdvertisement.ProductName" type="text" />
+            <br />
+            <label>Production</label>
+            <input asp-for="NewAdvertisement.Production" type="date" />
+            <br />
+            <label>Length</label>
+            <input asp-for="NewAdvertisement.Length" type="number" />
+            <br />
+            <label>MinPlayTime</label>
+            <input asp-for="NewAdvertisement.MinPlayTime" type="number" />
+            <br />
+            <label>CostsPerPlay</label>
+            <input asp-for="NewAdvertisement.CostsPerPlay" type="number" />
+            <br />
+            <div style="color:red" asp-validation-summary="All"></div>
+            <button type"submit" class="btn btn-primary">Kaufen</button>
+        </form>
