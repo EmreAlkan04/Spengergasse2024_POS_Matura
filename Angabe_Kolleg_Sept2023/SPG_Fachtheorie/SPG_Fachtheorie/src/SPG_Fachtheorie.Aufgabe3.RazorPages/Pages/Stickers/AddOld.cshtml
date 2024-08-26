@@ -1,0 +1,31 @@
+﻿@page "{CustomerGuid}"
+@model SPG_Fachtheorie.Aufgabe3.RazorPages.Pages.Stickers.AddModel
+
+<h1>Vignette Kaufen</h1>
+
+<form method="post">
+
+    <div class="mb-3">
+        <label class="form-label">Vehicles</label>
+     @* <select asp-for="NewSticker.VehiclesGuid" asp-items="@Model.Vehicles" class="form-select"></select>  *@
+        <select class="form-control" asp-for="NewSticker.Vehicles" asp-items="@Model.Vehicles"></select>
+  
+     </div>
+    <div class="mb-3">
+        <label class="form-label">Art der Vignette</label>
+        <select asp-for="NewSticker.StickerTypes" asp-items="@Model.StickerTypes" class="form-select"></select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Date</label>
+        <input type="date" class="form-control" asp-for="NewSticker.ValidFrom"/>
+    </div>
+
+    <div class="mb-3">
+        <div style="color:red;" asp-validation-summary="All"></div>
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+</form>
+

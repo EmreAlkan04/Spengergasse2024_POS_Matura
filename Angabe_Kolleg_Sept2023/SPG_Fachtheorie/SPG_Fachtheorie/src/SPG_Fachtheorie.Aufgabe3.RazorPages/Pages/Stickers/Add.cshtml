@@ -1,31 +1,25 @@
 ﻿@page "{CustomerGuid}"
 @model SPG_Fachtheorie.Aufgabe3.RazorPages.Pages.Stickers.AddModel
+@section head {
+}
 
-<h1>Vignette Kaufen</h1>
+<h1>Neue Vigentte kaufen</h1>
 
 <form method="post">
-
-    <div class="mb-3">
-        <label class="form-label">Vehicles</label>
-     @* <select asp-for="NewSticker.VehiclesGuid" asp-items="@Model.Vehicles" class="form-select"></select>  *@
-        <select class="form-control" asp-for="NewSticker.Vehicles" asp-items="@Model.Vehicles"></select>
-  
-     </div>
-    <div class="mb-3">
-        <label class="form-label">Art der Vignette</label>
-        <select asp-for="NewSticker.StickerTypes" asp-items="@Model.StickerTypes" class="form-select"></select>
+    <div>
+        <label>Auf den Kunden registierte Fahrzeug</label>
+        <select asp-for="Command.VehicleId" asp-items="@Model.Vehichles"></select>
+        <br />
     </div>
-
-    <div class="mb-3">
-        <label class="form-label">Date</label>
-        <input type="date" class="form-control" asp-for="NewSticker.ValidFrom"/>
+    <div>
+        <label>Art der Vignette</label>
+        <select asp-for="Command.StickerTypeId" asp-items="@Model.StickerTypes"></select>
+        <br />
     </div>
-
-    <div class="mb-3">
-        <div style="color:red;" asp-validation-summary="All"></div>
+    <div>
+        <label>Datum</label>
+        <input type="date" asp-for="Command.ValidFrom"/>
+        <br />
     </div>
-    <div class="mb-3">
-        <button type="submit" class="btn btn-primary">Save</button>
-    </div>
+    <button type="submit">Bestaetigen</button>
 </form>
-
