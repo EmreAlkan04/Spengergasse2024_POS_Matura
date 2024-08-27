@@ -1,0 +1,29 @@
+﻿@page
+@model AspShowcase.Webapp.Pages.Teams.IndexModel
+@{
+}
+<h3>Teams</h3>
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Klasse</th>
+            <th>Anzahl der Tasks</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var t in Model.Teams)
+        {
+            var cssClass = t.NumberOfTasks > 12 ? "manyTasks" : "";
+            <tr class="@cssClass">
+                <td>@t.Name</td>
+                <td>@t.Schoolclass</td>
+                <td>@t.NumberOfTasks</td>
+@*                 asp-route-teamguid bedeutet: Befülle die Routingvariable teamguid.
+                Sie muss in der Details.cshtml mit @Page auch so definiert werden. *@
+                <td>[ <a asp-page="/Teams/Details" asp-route-teamguid="@t.Guid">Details </a>]</td>
+            </tr>
+        }
+    </tbody>
+</table>

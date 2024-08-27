@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 0 0 4em;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    gap:1em;
+    display: flex;
+}
+main {
+    flex-grow: 1;
+}

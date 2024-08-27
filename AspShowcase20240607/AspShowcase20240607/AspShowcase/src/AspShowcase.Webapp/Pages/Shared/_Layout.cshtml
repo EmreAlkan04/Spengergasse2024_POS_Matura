@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AspShowcase.Webapp.styles.css" asp-append-version="true" />
+    <style>
+        .buttonlink {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><a class="buttonlink" asp-page="/Teams/Index">Teams</a></div>
+        <div>Site gererated at @DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss")</div>
+    </header>
+    <main>
+        @* <?php echo $content; ?> *@
+        @* In Razor Pages schaltet das @ zwischen HTML und C# um *@
+        @RenderBody()
+    </main>
+</body>
+</html>

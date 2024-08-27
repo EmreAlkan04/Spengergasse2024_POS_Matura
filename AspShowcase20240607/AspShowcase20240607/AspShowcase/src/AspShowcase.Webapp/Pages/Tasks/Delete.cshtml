@@ -1,0 +1,11 @@
+﻿@page "{taskGuid:Guid}"
+@model AspShowcase.Webapp.Pages.Tasks.DeleteModel
+@{
+}
+<h3>Task löschen</h3>
+<form method="post">
+    <p>Möchtest du den Task @Model.TaskDto.Title im Gegenstand @Model.TaskDto.Subject löschen?</p>
+    <button type="submit" class="btn btn-danger" asp-page-handler="Yes">Ja</button>
+    <button type="submit" class="btn btn-secondary" asp-page-handler="No">Nein</button>
+    <div style="color:red;" asp-validation-summary="All"></div>
+</form>

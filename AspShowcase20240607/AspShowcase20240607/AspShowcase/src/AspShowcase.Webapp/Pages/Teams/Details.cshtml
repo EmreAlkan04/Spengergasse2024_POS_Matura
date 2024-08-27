@@ -1,0 +1,37 @@
+﻿@page "{teamGuid:Guid}"
+@model AspShowcase.Webapp.Pages.Teams.DetailsModel
+@{
+}
+<h3>Details zum Team @Model.Team.Name</h3>
+
+<h4>Liste der Tasks</h4>
+<div>
+    <a asp-page="/Tasks/Add" asp-route-teamguid="@Model.TeamGuid">Neuen Task anlegen</a>
+</div>
+
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Title</th>
+            <th>Teacher</th>
+            <th>Expiration Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var t in Model.Team.Tasks)
+        {
+            <tr>
+                <td>@t.Subject</td>
+                <td>@t.Title</td>
+                <td>@t.TeacherLastname @t.TeacherFirstname</td>
+                <td>@t.ExpirationDate</td>
+                <td>
+                    [ <a asp-page="/Tasks/Edit" asp-route-taskguid="@t.Guid">Edit</a> |
+                    <a asp-page="/Tasks/Delete" asp-route-taskguid="@t.Guid">Delete</a> ]
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
