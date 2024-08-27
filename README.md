@@ -24,7 +24,7 @@
 
 <img width="314" alt="image" src="https://github.com/user-attachments/assets/45434328-e8bf-456f-b33d-046604574d6e">
 
-* [Razor](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/tree/main/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages) senden von [**mehreren _Links_**](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages/Customers/Index.cshtml); Add Methode mängel sind falsche rückgabe von string (numberplate) und nicht überprüfung von richtigem FahrzeugType  
+* [Razor](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/tree/main/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages) mit überbearbeiteten [Add Page](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/tree/main/Angabe_Kolleg_Sept2023/SPG_Fachtheorie/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages/Stickers), welches funktioniert.
 
 
 
