@@ -4,7 +4,9 @@ using FTSept2022.Aufgabe2.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query.Internal;
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using Xunit;
 
 namespace FTSept2022.Aufgabe2.Test
@@ -33,82 +35,62 @@ namespace FTSept2022.Aufgabe2.Test
         [Fact()]
         public void SubscribeCourse_Invalid_StudentRegistrationNumber()
         {
-            //Arrange
             using var db = GetDbContext();
             var service = new CourseService(db);
-            var studentId = "-21421414";
-            var courseId = 1;
+            string studentRegistrationNumber = "ifeowjfeiowhfiefiowefhioehfwiohfw";
+            int courseId = db.Courses.First().Id;
 
-            //Act
-            var result = service.SubscribeCourse(studentId, courseId);
-
-            //Assert
+            var result = service.SubscribeCourse(studentRegistrationNumber, courseId);
             Assert.False(result);
-
-            //throw new NotImplementedException("Noch keine Implementierung vorhanden");
         }
         [Fact()]
         public void SubscribeCourse_Invalid_CourseId()
         {
-            //Arrange
             using var db = GetDbContext();
             var service = new CourseService(db);
-            var studentId = db.Students.First().RegistrationNumber;
-            var courseId = -1;
+            var studentRegistrationNumber = db.Students.First().RegistrationNumber;
+            int courseId = -328;
 
-            //Act
-            var result = service.SubscribeCourse(studentId, courseId);
+            var result = service.SubscribeCourse(studentRegistrationNumber, courseId);
             Assert.False(result);
-            //throw new NotImplementedException("Noch keine Implementierung vorhanden");
         }
+
+        //Der Test SubscribeCourse_Student_Already_Enrolled beweist, dass der Wert false zurückgegeben
+        //wird, wenn der Studierende bereits zu diesem Course angemeldet ist
         [Fact()]
         public void SubscribeCourse_Student_Already_Enrolled()
         {
-            //Arrange
             using var db = GetDbContext();
             var service = new CourseService(db);
-            var studentId = db.Students.FirstOrDefault(s => s.Enrollments.Any(s => s.CourseId == 1)).RegistrationNumber;
-            var courseId = 1;
-            //Act
-            var result = service.SubscribeCourse(studentId, courseId);
+            var student = db.Courses.First().Enrollments.First().StudentNavigation;
+            var course = student.Enrollments.First().CourseNavigation.Id;
+            var studentId = student.RegistrationNumber;
+
+            var result = service.SubscribeCourse(studentId, course);
             Assert.False(result);
-            //throw new NotImplementedException("Noch keine Implementierung vorhanden");
         }
         [Fact()]
         public void SubscribeCourse_MaxStudent_Exceeded()
         {
-            //Arrange
             using var db = GetDbContext();
             var service = new CourseService(db);
-            var studentId = db.Students.First().RegistrationNumber;
-            var nextStudentId = db.Students.Skip(1).First().RegistrationNumber;
-            var thirdStudentId = db.Students.Skip(2).First().RegistrationNumber;
-            var courseId = 1;
-
-            //Act
-            var result1 = service.SubscribeCourse(studentId, courseId);
-            var result2 = service.SubscribeCourse(nextStudentId, courseId);
-            var result3 = service.SubscribeCourse(thirdStudentId, courseId);
-
-            Assert.False(result3);
-            //throw new NotImplementedException("Noch keine Implementierung vorhanden");
+            var studentRegistrationNumber = db.Students.First().RegistrationNumber;
+            var courseId = db.Courses.Where(s => s.MaxStudents < s.Enrollments.Count()).First().Id;
+            var result = service.SubscribeCourse(studentRegistrationNumber, courseId);
+            Assert.True(result);
         }
         [Fact()]
         public void SubscribeCourse_Success()
         {
-            //Arrange
             using var db = GetDbContext();
             var service = new CourseService(db);
-            var studentId = db.Students.First().RegistrationNumber;
-            var courseId = db.Courses.First();
-            courseId.MaxStudents += 5;
-            var IdofCourse = courseId.Id;
+            var studentRegistrationNumber = db.Students.First().RegistrationNumber;
+            var course = db.Courses.First();
+            course.MaxStudents += 5;
+            var courseId = course.Id;
 
-            //Act
-            var result = service.SubscribeCourse(studentId, IdofCourse);
-
+            var result = service.SubscribeCourse(studentRegistrationNumber, courseId);
             Assert.True(result);
-            //throw new NotImplementedException("Noch keine Implementierung vorhanden");
         }
     }
 }

@@ -14,95 +14,69 @@ namespace FTSept2022.Aufgabe2.Services
         {
             _db = db;
         }
+        //public record ExamStatisticsDto(int StudensWithoutGradeCount, IEnumerable<StudentDto> StudentsWithNoExam)
+        //{ }
+        //public record StudentDto(string FirstName, string LastName, DateTime BirthDate)
+        //{ }
 
         public ExamStatisticsDto CalcExamStatistics(int courseId)
         {
-            var all = _db.Courses.Include(s => s.Enrollments).ThenInclude(s => s.Exams)
-                .FirstOrDefault(s => s.Id == courseId);
-
-            int studentsWithoutGradeCount = all.Enrollments.Where(s => s.Exams.Any(e => e.Grade == null)).Count();
-            //throw new NotImplementedException("Noch keine Implementierung vorhanden");
-
-            var studentsWithNoExam = all.Enrollments.Where(s => s.Exams.Count == 0).Select(s => new StudentDto(s.StudentNavigation.FirstName, s.StudentNavigation.LastName, s.StudentNavigation.BirthDate));
-            //studentsWithNoExam.Select(s => new StudentDto(s.StudentNavigation.FirstName, s.StudentNavigation.LastName, s.StudentNavigation.BirthDate));
-
-            return new ExamStatisticsDto(studentsWithoutGradeCount, studentsWithNoExam);
+            var student = _db.Students
+                 .Include(s => s.Enrollments)
+                 .ThenInclude(s => s.Exams)
+                 .Where(s => s.Enrollments.Any(s => s.CourseNavigation.Id == courseId))
+                 .ToList();
+            var withoutGrade = student.Where(s => s.Enrollments.Any(s => s.Exams.All(s => s.Grade == null))).Count();
+            var studentNames = student
+                .Where(s => s.Enrollments == null)
+                .Select(s => new StudentDto(s.FirstName, s.LastName, s.BirthDate)).ToList();
+            return new ExamStatisticsDto(withoutGrade, studentNames);
         }
 
-        public bool SubscribeCourse(string studentId, int courseId) //,int professorId)
+        public bool SubscribeCourse(string studentRegistrationNumber, int courseId) //,int professorId)
         {
-            var student = _db.Students.Include(s => s.Enrollments).FirstOrDefault(s => s.RegistrationNumber == studentId);
-            var course = _db.Courses.Include(s => s.Enrollments).FirstOrDefault(s => s.Id == courseId);
-
-            if(student == null )
+            var student = _db.Students
+                .Include(s => s.Enrollments)
+                .ThenInclude(s => s.CourseNavigation)
+                .FirstOrDefault(s => s.RegistrationNumber == studentRegistrationNumber) ?? throw new CourseServiceException("student nicht gefunden");
+            //if (student is null) return false
+            var course = _db.Courses
+                .Include(s => s.Enrollments)
+                .ThenInclude(s => s.StudentNavigation)
+                .FirstOrDefault(s => s.Id == courseId) ?? throw new CourseServiceException("course nicht gefunden");
+            //if (course is null) return false;
+            if(course.Enrollments.Any(s => s.StudentRegistrationNumber == studentRegistrationNumber))
             {
-                return false;
-                //throw new ServiceException("Student nicht gefunden");
+                throw new CourseServiceException("bereits subscribed");
             }
-
-            if(course == null)
+            if(course.MaxStudents <= course.Enrollments.Count())
             {
-                return false;
-                //throw new ServiceException("Kurs nicht gefunden");
+                throw new CourseServiceException("Klasse voll");
             }
-
-            if (student.Enrollments.Any(s => s.CourseId == courseId))
-            {
-                return false;
-                //throw new ServiceException("Student ist bereits eingeschrieben");
-            }
-
-            if (course.MaxStudents <= course.Enrollments.Count())
-            {
-                return false;
-                //throw new ServiceException("Klasse voll");
-            }
-
-            //var enroll = new Enrollment() { CourseId = course, StudentRegistrationNumber = student};
-            var addEnrollment = new Enrollment() { CourseId = courseId, StudentRegistrationNumber = studentId };
-            _db.Enrollments.Add(addEnrollment);
-            return true; 
-            //throw new NotImplementedException("Noch keine Implementierung vorhanden");
-        }
-
-        public bool UnsubscribeCourse(string studentId, int courseId)
-        {
-            var student = _db.Students.Include(s => s.Enrollments).FirstOrDefault(s => s.RegistrationNumber == studentId);
-            var course = _db.Courses.Include(s => s.Enrollments).FirstOrDefault(s => s.Id == courseId);
-
-            if(student == null)
-            {
-                return false;
-                //throw new ServiceException("Student nicht gefunden");
-            }
-            if(course == null)
-            {
-                return false;
-                //throw new ServiceException("Kurs nicht gefunden");
-            }
-
-            if(student.Enrollments.FirstOrDefault(s => s.CourseId == courseId) == null)
-            {
-                return false;
-                //throw new ServiceException("Student ist nicht eingeschrieben");
-            }
-
-            if( student.Enrollments.FirstOrDefault(s => s.CourseId == courseId).Exams.Any())
-            {
-                return false;
-                //throw new ServiceException("Student hat bereits Prüfungen abgelegt");
-            }
-
-            var entroll = _db.Enrollments.FirstOrDefault(s => s.CourseId == courseId && s.StudentRegistrationNumber == studentId);
-            if(entroll == null)
-            {
-                return false;
-                //throw new ServiceException("Student ist nicht eingeschrieben");
-            }
-
-            _db.Enrollments.Remove(entroll);
             return true;
-            //throw new NotImplementedException("Noch keine Implementierung vorhanden");
+        }
+
+        public bool UnsubscribeCourse(string studentRegistrationNumber, int courseId)
+        {
+            var student = _db.Students
+                .Include(s => s.Enrollments)
+                .ThenInclude(s => s.Exams)
+                .FirstOrDefault(s => s.RegistrationNumber == studentRegistrationNumber
+                && s.Enrollments.Any(s => s.CourseNavigation.Id == courseId)) ?? throw new CourseServiceException("student nicht einmal angemeldet");
+            if(student.Enrollments.Where(s => s.Exams is null).Count() > 0)
+            {
+                throw new CourseServiceException("Student hat tests");
+            }
+            _db.Remove(student);
+            try
+            {
+                _db.SaveChanges();
+            }
+            catch(DbUpdateException ex)
+            {
+                throw new CourseServiceException(ex.Message);
+            }
+            return true;
         }
     }
 }
