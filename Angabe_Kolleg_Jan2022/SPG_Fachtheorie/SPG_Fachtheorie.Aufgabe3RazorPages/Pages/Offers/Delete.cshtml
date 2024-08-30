@@ -1,0 +1,21 @@
+﻿@page "{OfferId}"
+@model SPG_Fachtheorie.Aufgabe3RazorPages.Pages.Offers.DeleteModel
+@{
+}
+
+<h1>Delete</h1>
+
+<tr>
+    <th>ID</th>
+    <td>@Model.Offer.Id</td>
+</tr>
+<tr>
+    <th>Appointments</th>
+    <td>@Model.Offer.Appointments.Count()</td>
+</tr>
+
+<form method="post">
+    <input type="submit" value="Delete" class="btn btn-danger" />
+    <button type="submit">Löschen</button>
+    <a asp-page="./Index">Back to List</a>
+</form>

@@ -1,0 +1,43 @@
+﻿@page "{OfferId}"
+@model SPG_Fachtheorie.Aufgabe3RazorPages.Pages.Offers.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+<h1>Details</h1>
+
+@* Zeigt alle Appointments dieses Angebotes an. Dabei sind folgende Felder in Tabellenform auszugeben:
+Vor- und Zuname des Studierenden, Datum, Ort und Status. *@
+@* Abgesagte Termine sollen grau hinterlegt
+werden. Am Ende der Seite soll ein Link zurück zur Seite /Offer führen. *@
+
+<table>
+    <thead>
+        <tr>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Datum</th>
+            <th>Ort</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var a in Model.AppointmentsList)
+        {
+            <tr>
+                <td>@a.Vorname</td>
+                <td>@a.Nachname</td>
+                <td>@a.Date</td>
+                <td>@a.Ort</td>
+                @if(a.Status == Aufgabe2.Model.AppointmentState.Cancelled)
+                {
+                    <td class="grau">@a.Status</td>
+                }
+                else
+                {
+                <td>@a.Status</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

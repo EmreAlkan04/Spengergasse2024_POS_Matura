@@ -1,0 +1,39 @@
+﻿@page
+@model Offers.IndexModel
+@{
+}
+
+<h1>Offers</h1>
+
+<table class="test">
+    <thead>
+        <tr>
+            <th>Term</th>
+            <th>Name</th>
+            <th>EducationType</th>
+            <th>From</th>
+            <th>To</th>
+            <th>CountofAppointments</th>
+            <th>Aktionen</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var i in Model.OffersList)
+        {
+            <tr>
+                <td>@i.Term</td>
+                <td>@i.Name</td>
+                <td>@i.EducationType</td>
+                <td>@i.From.ToString("dd.MM.yyyy")</td>
+                <td>@i.To.ToString("dd.MM.yyyy")</td>
+                <td>@i.CountofAppointments</td>
+                <td>
+                    <a asp-page="/Offers/Details" asp-route-OfferId="@i.Id">OfferDetails</a>
+                    <a asp-page="/Offers/Edit" asp-route-OfferId="@i.Id">Edit</a>
+                    <a asp-page="/Offers/Delete" asp-route-OfferId="@i.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    <td><a asp-page="/Offers/Add">Add</a></td>
+    </tbody>
+</table>

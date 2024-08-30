@@ -1,0 +1,20 @@
+﻿@page
+@model Offers.AddModel
+@{
+}
+
+<h1>Add new Offer</h1>
+
+<form method="post">
+    <label>Semester</label>
+    <select asp-for="Command.SubjectId" asp-items="@Model.Subjects"></select>
+    </<br />
+    <label>DatumVon</label>
+    <input type="date" asp-for="Command.From" />
+    </<br />
+    <label>DatumBis</label>
+    <input type="date" asp-for="Command.To" />
+    </br>
+    <button type="submit">Kaufen</button>
+
+</form>

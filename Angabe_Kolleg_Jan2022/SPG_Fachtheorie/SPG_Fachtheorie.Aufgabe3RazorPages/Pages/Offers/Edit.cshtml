@@ -1,0 +1,36 @@
+﻿@page "{OfferId}"
+@model SPG_Fachtheorie.Aufgabe3RazorPages.Pages.Offers.EditModel
+@{
+}
+
+<h1>Edit Offer</h1>
+
+<table>
+    <tr>
+        <th>Subject</th>
+        <td>@Model.Offer.Subject.Name</td>
+    </tr>
+    <tr>
+        <th>Term</th>
+        <td>@Model.Offer.Subject.Term</td>
+    </tr>
+    <tr>
+        <th>EducationType</th>
+        <td>@Model.Offer.Subject.EducationType</td>
+    </tr>
+    <tr>
+        <th>Von</th>
+        <td>@Model.Offer.From.ToString("dd.MM.yyyy")</td>
+    </tr>
+    <tr>
+        <th>Bis</th>
+        <td>@Model.Offer.To.ToString("dd.MM.yyyy")</td>
+    </tr>
+</table>
+
+<form method="post" class="mb-3">
+    <label>New To Date</label>
+    <input asp-for="Command.NewTO" type="date" class="form-label"/>
+    <br />
+    <button type="submit">Ändern</button>
+</form>

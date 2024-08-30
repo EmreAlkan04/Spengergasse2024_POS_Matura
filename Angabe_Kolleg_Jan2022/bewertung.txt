@@ -1,0 +1,3 @@
+A1: fast geschenkt?
+A2: Methoden richtig, aber bei angabe passen die parameter nicht, weshalb 3/10 Unittests nicht gehen
+A3: todo
