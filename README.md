@@ -51,3 +51,14 @@
 <img width="360" alt="image" src="https://github.com/user-attachments/assets/beb04d59-c240-48e6-b974-628045047f96">
 
 * [Razor](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/tree/main/Angabe_Kolleg_Jan2023/SPG_Fachtheorie/src/SPG_Fachtheorie.Aufgabe3.RazorPages/Pages) Details und Add Pages;
+
+
+## [Jänner 2022](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Jan2022/Angabe.pdf)
+
+* _Aufgabe 1 ist dasselbe, deshalb nach bedarf suchen_
+
+* [Service](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Jan2022/SPG_Fachtheorie/SPG_Fachtheorie.Aufgabe2/AppointmentService.cs) mit [Tests](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Jan2022/SPG_Fachtheorie/SPG_Fachtheorie.Aufgabe2.Test/AppointmentServiceTests.cs) (die letzten gehen nicht)
+
+<img width="251" alt="image" src="https://github.com/user-attachments/assets/640f0f10-3176-4e6e-b289-e59a58ac0e1a">
+
+* [Razor](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/tree/main/Angabe_Kolleg_Jan2022/SPG_Fachtheorie/SPG_Fachtheorie.Aufgabe3RazorPages/Pages) mit [Delete](https://github.com/EmreAlkan04/Spengergasse2024_POS_Matura/blob/main/Angabe_Kolleg_Jan2022/SPG_Fachtheorie/SPG_Fachtheorie.Aufgabe3RazorPages/Pages/Offers/Delete.cshtml)
