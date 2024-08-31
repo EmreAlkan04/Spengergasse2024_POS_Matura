@@ -20,70 +20,52 @@ namespace SPG_Fachtheorie.Aufgabe2.Services
 
         public ContingentStatistics CalcContingentStatistics(int contingentId)
         {
-            var contingent = _db.Contingents
-                .Include(c => c.Tickets) // Ensure that the Tickets are loaded
-                .Include(c => c.Show)
-                .FirstOrDefault(c => c.Id == contingentId ); // Get the contingent
+            var contigent = _db.Contingents
+                .Include(s => s.Show)
+                .Include(s => s.Tickets)
+                .FirstOrDefault(s => s.Id == contingentId) ?? throw new EventServiceException("nicht gefunden");
+            var sold = contigent.Tickets
+                .Where(s => s.TicketState == TicketState.Sold).Sum(s => s.Pax + 1);
+            var reserved = contigent.Tickets
+                .Where(s => s.TicketState == TicketState.Reserved).Sum(s => s.Pax + 1);
+            return new ContingentStatistics(sold, reserved, contigent.Show);
 
-            if (contingent == null)
-            {
-                throw new ArgumentException($"No contingent found with ID {contingentId}", nameof(contingentId));
-            }
-
-            // Count the sold and reserved tickets
-            int SoldTickets = contingent.Tickets.Where(t => t.TicketState == TicketState.Sold).Sum(t => t.Pax + 1);
-            int ReservedTickets = contingent.Tickets.Where(t => t.TicketState == TicketState.Reserved).Sum(t => t.Pax + 1);
-            Show OwnedShow = contingent.Show;
-
-            // Return the statistics
-            return new ContingentStatistics(SoldTickets, ReservedTickets, OwnedShow);
+            //throw new NotImplementedException();
         }
 
         public int CreateReservation(int guestId, int contingentId, int pax, DateTime dateTime)
-        {
-            var guest = _db.Guests.Find(guestId);
-            var contingent = _db.Contingents.Find(contingentId);
-            if (guest == null)
-            {
-                throw new EventServiceException("Invalid guest id");
-            }
-            if (contingent == null)
-            {
-                throw new EventServiceException("Invalid contingent id");
-            }
-
-
-
-            if(contingent.AvailableTickets < (pax+1))
-            {
-                throw new EventServiceException("Show is sold out");
-            }
-           
-
-            if(dateTime < DateTime.Now.AddDays(14))
-            {
-                throw new EventServiceException("The show is too close in time");
-            }
-
-           if(guest.Tickets.Any(t => t.Contingent.Id == contingentId && t.ReservationDateTime == dateTime))
+        {   
+            var contigent = _db.Contingents
+                .Include(s => s.Show)
+                .Include(s => s.Tickets)
+                .ThenInclude(s => s.Guest)
+                .FirstOrDefault(s => s.Id == contingentId) ?? throw new EventServiceException("Invalid contingent id");
+            if (contigent.Show.Date < dateTime.AddDays(14)) throw new EventServiceException("The show is too close in time");
+            var guest = _db.Guests
+                .Include(s => s.Tickets)
+                .ThenInclude(s => s.Contingent)
+                .ThenInclude(s => s.Show)
+                .FirstOrDefault(s => s.Id == guestId) ?? throw new EventServiceException("Invalid guest id");
+            if (guest.Tickets.Any(s => s.ReservationDateTime == dateTime || s.Contingent.Id == contingentId))
             {
                 throw new EventServiceException("A reservation or purchase has already been made for this contingent");
             }
-
-
-            var ticket = new Ticket(guest, contingent, TicketState.Reserved, dateTime, pax);
-
-            _db.Add(ticket);
+            if (contigent.AvailableTickets < contigent.Tickets.Count() + pax + 1)
+            {
+                throw new EventServiceException("Show is sold out");
+            }
+            var newTicket = new Ticket(guest, contigent, TicketState.Reserved, dateTime, pax);
+            _db.Tickets.Add(newTicket);
             try
             {
                 _db.SaveChanges();
             }
-            catch (DbUpdateException e)
+            catch(DbUpdateException ex)
             {
-                throw new EventServiceException("An error occurred while saving the reservation", e);
+                throw new EventServiceException(ex.Message);
             }
-
-            return guest.Id;
+            return newTicket.Id;
+            //throw new NotImplementedException();
         }
     }
 }
