@@ -40,95 +40,106 @@ namespace SPG_Fachtheorie.Aufgabe2.Test
         [Fact]
         public void ShouldThrowException_WhenInvalidGuestId()
         {
-            // Arrange
+            //Arrange
             using var db = GetEmptyDbContext();
             var service = new EventService(db);
-            int invalidGuestId = -1; // Beispiel für eine ungültige guestId
-            int validContingentId = 1; // Stellen Sie sicher, dass dies ein gültiger Wert ist, der in Ihrer Seed-Methode definiert ist
-            int pax = 1;
-            DateTime reservationDate = DateTime.Now.AddDays(15); // Ein gültiges Datum in der Zukunft
-            
+            var guest = new Guest("emre", "alkan", DateTime.Now.AddYears(-20));
+            var contigent = new Contingent(new Show(new Event("eventname"), DateTime.Now.AddDays(90)), ContingentType.Floor, 100);
+            db.Contingents.Add(contigent);
+            db.Guests.Add(guest);
+            db.SaveChanges();
 
-            // Act & Assert
-            var exception = Assert.Throws<EventServiceException>(() => service.CreateReservation(invalidGuestId, validContingentId, pax, reservationDate));
-            Assert.True(exception.Message == "Invalid guest id");
+            //Act
+            //var result = service.CreateReservation(-3, contigent.Id, 2, DateTime.Now);
+
+            //Assert
+            var ex = Assert.Throws<EventServiceException>(() => service.CreateReservation(-3, contigent.Id, 2, DateTime.Now));
+            Assert.True(ex.Message == "Invalid guest id");
+            db.ChangeTracker.Clear();
+
         }
 
         [Fact]
         public void ShouldThrowException_WhenNoTickets()
         {
-            //Arrange
             using var db = GetEmptyDbContext();
-            db.Seed();
             var service = new EventService(db);
-            int validGuestId = 1; // Stellen Sie sicher, dass dies ein gültiger Wert ist, der in Ihrer Seed-Methode definiert ist
-            int validContingentId = 1; // Stellen Sie sicher, dass dies ein gültiger Wert ist, der in Ihrer Seed-Methode definiert ist
-            int pax = 1; // Die Anzahl der angeforderten Tickets
-            DateTime reservationDate = DateTime.Now.AddDays(15); // Ein gültiges Datum in der Zukunft
-            var contingent = db.Contingents.Where(x => x.Id == validContingentId);
-            contingent.First().AvailableTickets = 0;
-            
+            var guest = new Guest("emre", "alkan", DateTime.Now.AddYears(-20));
+            var contigent = new Contingent(new Show(new Event("eventname"), DateTime.Now.AddDays(90)), ContingentType.Floor, 5);
+            db.Contingents.Add(contigent);
+            db.Guests.Add(guest);
+            db.SaveChanges();
 
+            //Act
+            //var result = service.CreateReservation(-3, contigent.Id, 2, DateTime.Now);
 
-
-            //Act & Assert
-            var exception = Assert.Throws<EventServiceException>(() => service.CreateReservation(validGuestId, validContingentId, pax, reservationDate));
-            Assert.True(exception.Message == "Show is sold out"); // Stellen Sie sicher, dass Ihre CreateReservation-Methode diese spezifische Nachricht ausgibt, wenn keine Tickets verfügbar sind.
+            //Assert
+            var ex = Assert.Throws<EventServiceException>(() => service.CreateReservation(guest.Id, contigent.Id, 6, DateTime.Now));
+            Assert.True(ex.Message == "Show is sold out");
+            db.ChangeTracker.Clear();
         }
 
         [Fact]
         public void ShouldThrowException_WhenGuestHasTicketForShowAndContingentReserved()
         {
             using var db = GetEmptyDbContext();
-            db.Seed();
             var service = new EventService(db);
-            int validGuestId = 1; // Stellen Sie sicher, dass dies ein gültiger Wert ist, der in Ihrer Seed-Methode definiert ist
-            int validContingentId = 1; // Stellen Sie sicher, dass dies ein gültiger Wert ist, der in Ihrer Seed-Methode definiert ist
-            int pax = 1; // Die Anzahl der angeforderten Tickets
-            DateTime reservationDate = DateTime.Now.AddDays(15); // Ein gültiges Datum in der Zukunft
+            var guest = new Guest("emre", "alkan", DateTime.Now.AddYears(-20));
+            var contigent = new Contingent(new Show(new Event("eventname"), DateTime.Now.AddDays(90)), ContingentType.Floor, 100);
+            db.Contingents.Add(contigent);
+            db.Guests.Add(guest);
+            db.SaveChanges();
 
             //Act
-            var addedTicket = service.CreateReservation(validGuestId, validContingentId, pax, reservationDate);
-            var addSameTicketAgain = Assert.Throws<EventServiceException>(() =>  service.CreateReservation(validGuestId, validContingentId, pax, reservationDate));
+            var result = service.CreateReservation(guest.Id, contigent.Id, 6, DateTime.Now);
 
             //Assert
-            Assert.True(addSameTicketAgain.Message == "A reservation or purchase has already been made for this contingent");
+            var ex = Assert.Throws<EventServiceException>(() => service.CreateReservation(guest.Id, contigent.Id, 6, DateTime.Now));
+            Assert.True(ex.Message == "A reservation or purchase has already been made for this contingent");
+            db.ChangeTracker.Clear();
         }
 
         [Fact]
         public void ShouldThrowException_WhenShowDateNot14DaysInFuture()
         {
             using var db = GetEmptyDbContext();
-            db.Seed();
             var service = new EventService(db);
-            int validGuestId = 1; // Stellen Sie sicher, dass dies ein gültiger Wert ist, der in Ihrer Seed-Methode definiert ist
-            int validContingentId = 1; // Stellen Sie sicher, dass dies ein gültiger Wert ist, der in Ihrer Seed-Methode definiert ist
-            int pax = 1; // Die Anzahl der angeforderten Tickets
-            DateTime reservationDate = DateTime.Now.AddDays(9); // Ein ungültiges Datum in der Zukunft
+            var guest = new Guest("emre", "alkan", DateTime.Now.AddYears(-20));
+            var contigent = new Contingent(new Show(new Event("eventname"), DateTime.Now.AddDays(3)), ContingentType.Floor, 100);
+            db.Contingents.Add(contigent);
+            db.Guests.Add(guest);
+            db.SaveChanges();
 
-            //Act & Assert
-            var exception = Assert.Throws<EventServiceException>(() => service.CreateReservation(validGuestId, validContingentId, pax, reservationDate));
-            Assert.True(exception.Message == "The show is too close in time"); // Stellen Sie sicher, dass Ihre CreateReservation-Methode diese spezifische Nachricht ausgibt, wenn die Show weniger als 14 Tage in der Zukunft liegt.
+            //Act
+            //var result = service.CreateReservation(guest.Id, contigent.Id, 6, DateTime.Now);
+
+            //Assert
+            var ex = Assert.Throws<EventServiceException>(() => service.CreateReservation(guest.Id, contigent.Id, 6, DateTime.Now));
+            Assert.True(ex.Message == "The show is too close in time");
+            db.ChangeTracker.Clear();
         }
 
         [Fact]
         public void ShouldReturnTicketId_WhenParametersAreValid()
         {
             using var db = GetEmptyDbContext();
-            db.Seed();
             var service = new EventService(db);
-            int validGuestId = 1; // Stellen Sie sicher, dass dies ein gültiger Wert ist, der in Ihrer Seed-Methode definiert ist
-            int validContingentId = 1; // Stellen Sie sicher, dass dies ein gültiger Wert ist, der in Ihrer Seed-Methode definiert ist
-            int pax = 2; // Die Anzahl der angeforderten Tickets
-            DateTime reservationDate = DateTime.Now.AddDays(20); // Ein gültiges Datum in der Zukunft
+            var guest = new Guest("emre", "alkan", DateTime.Now.AddYears(-20));
+            var contigent = new Contingent(new Show(new Event("eventname"), DateTime.Now.AddDays(20)), ContingentType.Floor, 100);
+            db.Contingents.Add(contigent);
+            db.Guests.Add(guest);
+            db.SaveChanges();
 
             //Act
-            var addTicket = service.CreateReservation(validGuestId, validContingentId, pax, reservationDate);
-            var searchTicket = db.Tickets.Where(x => x.Guest.Id == validGuestId);
+            var result = service.CreateReservation(guest.Id, contigent.Id, 6, DateTime.Now);
+            var ticket = db.Tickets.Find(result) ?? throw new EventServiceException();
+
+
             //Assert
-            Assert.NotNull(searchTicket);
-            Assert.Equal(addTicket, validGuestId);
-            
+            //var ex = Assert.Throws<EventServiceException>(() => service.CreateReservation(guest.Id, contigent.Id, 6, DateTime.Now));
+            //Assert.True(ex.Message == "The show is too close in time");
+            Assert.NotNull(ticket);
+            db.ChangeTracker.Clear();
         }
 
         /// <summary>
