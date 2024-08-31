@@ -4,11 +4,7 @@
 }
 <h1>Übersicht über die Events</h1>
 
-<style>
-    tbody tr:hover {
-        background-color: lightgreen;
-    }
-</style>
+
 
 <table>
     <thead>
@@ -19,13 +15,21 @@
             <th>Showtermin</th>
             <th>Aktionen</th>
         </tr>
-        <tbody class="justgreen">
+        <tbody>
 
                 @foreach (var b in a.ShowDTOs.Where(s => s.Date > new DateTime(2024, 1, 16, 0, 0, 0)).OrderBy(s => s.Date))
                 {
                 <tr>
-                    <td>@b.Date.ToString("dd.MM.yyyy")</td>
-                    <td><a asp-page="/Contingents" asp-route-showId="@b.Id">Contigents</a></td>
+                        @if (b.Date.Month == 1)
+                        {
+                        <td class="justgreen">@b.Date.ToString("dd.MM.yyyy")</td>
+                        <td class="justgreen"><a asp-page="/Contingents" asp-route-showId="@b.Id">Contigents</a></td>
+                        }
+                        @if (b.Date.Month != 1)
+                        {
+                        <td>@b.Date.ToString("dd.MM.yyyy")</td>
+                        <td><a asp-page="/Contingents" asp-route-showId="@b.Id">Contigents</a></td>
+                        }
                 </tr>
                 }
         </tbody>
