@@ -65,19 +65,20 @@ namespace SPG_Fachtheorie.Aufgabe1.Test
         [Fact]
         public void ChangeAppointmentStateToConfirmedSuccessTest()
         {
-            //Arrange
             using var db = GetEmptyDbContext();
-            var appointment = new Appointment(DateTime.Now, TimeSpan.FromHours(2), new Patient("boris", "johnson",
-                new Address("10 Downing Street", 2, "SW1A 2AA"), "ja@gmail", "+43500"), DateTime.Now, new AppointmentState(DateTime.Now, "idk"));
-
-            //Act
-            db.Appointments.Add(appointment);
-            db.SaveChanges();
+            var patient = new Patient("emre", "alkan", new Address("sido", 3, "uhef"), "fheio", "iheo");
+            var appintmentState = new AppointmentState(DateTime.Now);
+            var appointment = new Appointment(DateTime.Now.AddDays(4), TimeSpan.Zero, patient, DateTime.Now, appintmentState);
+            var conApooin = new ConfirmedAppointmentState(DateTime.Now, TimeSpan.Zero, "ifjeo");
+            
+            db.Add(appointment);
             db.ChangeTracker.Clear();
-
-
-            //Assert
-            Assert.True(db.AppointmentStates.Count()== 1);
+            
+            appointment.AppointmentState = conApooin;
+            db.Add(appointment);
+            db.SaveChanges();
+            
+            Assert.True(db.appointmentStates.Count() == 1);
         }
     }
 }
