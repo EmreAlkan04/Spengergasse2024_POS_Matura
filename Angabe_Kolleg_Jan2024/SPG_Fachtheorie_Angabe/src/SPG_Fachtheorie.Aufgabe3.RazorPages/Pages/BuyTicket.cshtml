@@ -19,6 +19,7 @@
     <br />
     <label class="form-label" for="guest">Pax:</label>
     <input asp-for="NewTicket.Pax" class="form-control" type="text" />
+    <span asp-validation-for="NewTicket.Pax" class="text-danger"></span>
     <br />
     <div style="color:red" asp-validation-summary="All"></div>
     <button type"submit" class="btn btn-primary">Kaufen</button>
