@@ -22,7 +22,7 @@ namespace SPG_Fachtheorie.Aufgabe1.Model
 
         [Key, ForeignKey("Appointment")]
         public int AppointmentStateId { get; set; }
-        public Appointment? Appointment { get; set; }
+        public Appointment Appointment { get; set; } = default!; //nicht ?, weil wir wollen keine 1: 0..1 beziehung, sondern 1:1
         public DateTime Created { get; set; }
         public string Type { get; set; }
 
